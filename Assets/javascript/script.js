@@ -1,1 +1,2 @@
-alert("Got it")
+const queryString = window.location.search;
+console.log(queryString);
