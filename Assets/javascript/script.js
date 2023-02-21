@@ -34,17 +34,28 @@ function payWithPaystack(e) {
             amount: document.getElementById("amount").value * 100,
             // label: "Optional string that replaces customer email"
             ref:document.getElementById("ref").value,
+            channel:['card'],
             onClose: function(){
             alert('Window closed.');
             },
             callback: function(response){
             let message = 'Payment complete! Reference: ' + response.reference;
-            print(response)
+            console.log(response)
             alert(message);
             }
         });
 
         handler.openIframe();
+        }
+
+        x={
+            "reference": "1676957688798517compan-compan-higher-262000776",
+            "trans": "2555463208",
+            "status": "success",
+            "message": "Approved",
+            "transaction": "2555463208",
+            "trxref": "1676957688798517compan-compan-higher-262000776",
+            "redirecturl": "https://backend.magentacashier.com/business/paystackpayment/?trxref=1676957688798517compan-compan-higher-262000776&reference=1676957688798517compan-compan-higher-262000776"
         }
 
 fetch('https://backend.magentacashier.com/business/merchant-transaction-details/'+ref, {
