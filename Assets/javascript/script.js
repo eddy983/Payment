@@ -46,7 +46,7 @@ function payWithPaystack(e) {
         handler.openIframe();
         }
 
-fetch('https://backend.magentacashier.com/business/merchant-transaction-details/1676904667998403shalom-shalom-abeokuta-11011219009077112', {
+fetch('https://backend.magentacashier.com/business/merchant-transaction-details/'+ref, {
   method: 'GET',
   headers: {
     'accept': 'application/json',
