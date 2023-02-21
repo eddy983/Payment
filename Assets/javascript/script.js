@@ -39,6 +39,7 @@ function payWithPaystack(e) {
             },
             callback: function(response){
             let message = 'Payment complete! Reference: ' + response.reference;
+            print(response)
             alert(message);
             }
         });
