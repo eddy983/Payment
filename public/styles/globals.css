@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  @apply mx-auto px-4 md:px-7 lg:px-10 xl:px-16;
+}
+
+@font-face {
+  font-family: 'mark pro';
+  src: url('/fonts/mark-pro-light.OTF') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'mark pro';
+  src: url('/fonts/mark-pro-medium.OTF') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mark Pro';
+  src: url('/fonts/Mark-Pro-Bold.OTF') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mark Pro';
+  src: url('/fonts/Mark-Pro-Black.OTF') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+.styles-module_blinkingCursor__yugAC {
+  color: #fff !important;
+}
+
+.carousel .control-dots {
+}
+
+.carousel .control-dots .dot {
+  background-color: #d3d3d3;
+  width: 21px;
+  height: 6px;
+  border-radius: 4px;
+}
+
+.carousel .control-dots .dot.selected {
+  /* background-color: #fff; */
+  width: 37px;
+}
+
+.carousel-root.light .control-dots .dot.selected {
+  background-color: #4200ff;
+}
+
+.testimonial-slider .slick-list {
+  padding: 40px 20px !important
+}
+
+.testimonial-slider .slick-center {
+  transform: scale(1.15);
+}
