@@ -1,0 +1,310 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'MarkPro';
+  src: url('/fonts/MarkPro-Bold.eot');
+  src: url('/fonts/MarkPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/MarkPro-Bold.woff2') format('woff2'), url('/fonts/MarkPro-Bold.woff') format('woff'),
+    url('/fonts/MarkPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MarkPro';
+  src: url('/fonts/MarkPro-Medium.eot');
+  src: url('/fonts/MarkPro-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/MarkPro-Medium.woff2') format('woff2'),
+    url('/fonts/MarkPro-Medium.woff') format('woff'),
+    url('/fonts/MarkPro-Medium.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MarkPro';
+  src: url('/fonts/MarkPro-Book.eot');
+  src: url('/fonts/MarkPro-Book.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/MarkPro-Book.woff2') format('woff2'), url('/fonts/MarkPro-Book.woff') format('woff'),
+    url('/fonts/MarkPro-Book.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MarkPro';
+  src: url('/fonts/MarkPro.eot');
+  src: url('/fonts/MarkPro.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/MarkPro.woff2') format('woff2'), url('/fonts/MarkPro.woff') format('woff'),
+    url('/fonts/MarkPro.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Bold.eot');
+  src: url('/fonts/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Poppins-Bold.woff2') format('woff2'), url('/fonts/Poppins-Bold.woff') format('woff'),
+    url('/fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-SemiBold.eot');
+  src: url('/fonts/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Poppins-SemiBold.woff2') format('woff2'),
+    url('/fonts/Poppins-SemiBold.woff') format('woff'),
+    url('/fonts/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins.eot');
+  src: url('/fonts/Poppins.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Poppins.woff2') format('woff2'), url('/fonts/Poppins.woff') format('woff'),
+    url('/fonts/Poppins.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: url('/fonts/DMSans-Bold.eot');
+  src: url('/fonts/DMSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/DMSans-Bold.woff2') format('woff2'),
+    url('/fonts/DMSans-Bold.woff') format('woff'),
+    url('/fonts/DMSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: url('/fonts/DMSans-Medium.eot');
+  src: url('/fonts/DMSans-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/DMSans-Medium.woff2') format('woff2'),
+    url('/fonts/DMSans-Medium.woff') format('woff'),
+    url('/fonts/DMSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.07);
+  border-radius: 10px;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: rgba(0, 0, 0, 0) !important;
+}
+
+/* Remove default autofil colors  */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.bg-blue-gradient {
+  background: linear-gradient(90deg, #107ee2 -2.59%, #032282 104.34%);
+}
+
+.bg-submit-btn {
+  background: linear-gradient(90deg, #0184d6 -2.59%, #004067 104.34%);
+}
+
+/*placeholder*/
+.deviceName span {
+  color: #4e4e4e !important;
+  font-size: 0.7rem;
+}
+
+/* labels */
+.deviceName .text-employment-blue-light,
+.serial_number span,
+.model span,
+.terminalIDs span {
+  color: #4e4e4e !important;
+  font-size: 0.9rem;
+}
+
+.small__table tr:not(:last-child) {
+  border-bottom: 0.4px solid #d6d6d6;
+}
+
+/* .selected div {
+  background-color: #e9f7ff;
+} */
+
+.after_line {
+  display: flex;
+  align-items: center;
+}
+
+.after_line::after {
+  content: '';
+  flex: 1;
+  margin-left: 1rem;
+  height: 1px;
+  background-color: #c4c4c4;
+}
+.lines::after {
+  content: '';
+  position: absolute;
+  left: 70%;
+  top: 62%;
+  border: 1px dashed #fff;
+  width: 100%;
+}
+
+.bvn__verify label,
+.personal__details label {
+  color: #000;
+  font-weight: 500;
+}
+.personal__details label {
+  font-weight: 600;
+}
+
+.icon_tabs .all_customers .icons {
+  background-color: #fff !important;
+}
+
+textarea {
+  resize: none !important;
+}
+
+.select_custom p {
+  color: red !important;
+}
+
+[type='date'] {
+  background: #fff
+    url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50%
+    no-repeat;
+}
+[type='date']::-webkit-inner-spin-button {
+  display: none;
+}
+[type='date']::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+/* MENU_LIST ANIMATIONS*/
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-down[data-reach-menu-list],
+.slide-down[data-reach-menu-items] {
+  border-radius: 10px;
+  box-shadow: 0 0px 3px -5px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .slide-down[data-reach-menu-list],
+  .slide-down[data-reach-menu-items] {
+    animation: slide-down 0.2s ease;
+  }
+}
+
+[data-quantity] button {
+  position: absolute !important;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  top: 0.9rem !important;
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-size: 3.5rem 1.5rem !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 100%;
+  border-radius: 0.4rem !important;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  opacity: 0.9 !important;
+  border: 1.5px solid #0d7cdc !important;
+  background-color: #fff !important;
+}
+
+[data-quantity] input {
+  font-size: 12px !important;
+  height: 2rem !important;
+  padding: 0 1.1rem !important;
+  margin-top: 0.6rem;
+  border-radius: 2rem;
+  border: 0;
+  background: #fff;
+  color: #222;
+  box-shadow: 0 5px 45px -10px rgb(0 0 0 / 25%);
+  text-align: center;
+  width: 100% !important;
+  box-sizing: border-box;
+  font-weight: lighter;
+}
+
+.container-checkbox {
+  background-color: #ffffff;
+  box-shadow: 0 0 25px rgba(17, 1, 68, 0.08);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.container-checkbox input[type='checkbox'] {
+  -webkit-appearance: none;
+  width: 100%;
+  cursor: pointer;
+}
+.container-checkbox input[type='checkbox']:after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400;
+  content: '\f111';
+  font-size: 18px;
+  color: #478bfb;
+  right: 10px;
+  top: -5px;
+  padding: 10px;
+}
+.container-checkbox input[type='checkbox']:checked:after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\2611';
+  color: #478bfb;
+  font-size: 18px;
+}
