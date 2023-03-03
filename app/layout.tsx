@@ -1,6 +1,6 @@
 'use client'
 
-import { Footer } from '@/components'
+
 import '../public/styles/globals.css'
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -8,7 +8,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className="font-montserrat">
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   )

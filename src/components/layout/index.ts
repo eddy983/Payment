@@ -1,4 +1,5 @@
 export * from './Layout'
 export * from './EmploymentFormsFooter'
+export * from './PayLinkHeader'
 export * from './EmploymentFormsHeader'
 export * from './EmploymentFormsLayout'
